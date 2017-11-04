@@ -9,6 +9,7 @@ body{
 	padding: 50px, 50px;
 	font-size: 64px;
 	font-family: 'Raleway', sans-serif;
+	position: fixed;
 }
 		nav ul li a{
 			display: block;
