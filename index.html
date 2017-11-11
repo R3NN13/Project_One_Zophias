@@ -28,6 +28,31 @@
 			font-family:'Julius Sans One', sans-serif;
 			font-size:xx-large;
 		}
+		.jumbotron{
+			padding:1.5%;
+			padding-top: 0.5%;
+		}
+		.modal{
+			
+		}
+		.modal-title{
+			font-size: x-large;
+		}
+		.form-control{
+			font-family:sans-serif;
+			position:;
+			width: 70%;
+			margin-right: 10%;
+		}
+		.modal-body{
+			
+		}
+		.modal-footer{
+		
+		}
+		.form-label{
+			font-size: 18px;
+		}
 	</style>
 
 </head>
@@ -73,61 +98,76 @@
 	<!-- JUMBOTRON -->
   <div class="jumbotron text-center">
 		<div class="container">
-			<h1>Sign up for updates!</h1>
-			<p>Enter your email to get updates straight to your inbox.</p>
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Sign up!</button>
-		</div>
-
-		<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
-				<div class="modal-dialog" role="document">
+			<h2>Click to sign up for updates!</h2>
+			<!-- Trigger the modal with a button -->
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click Here</button>
+		
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+				
+				<!-- Modal content-->
 					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title">Modal title</h4>
-						</div>
+						<!-- <div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title"><b>Enter your name and email address and click 'Confirm' for updates!</b></h4>
+						</div> -->
+				<!-- modal body -->
 						<div class="modal-body">
-								<form class="form-inline">
-										<div class="form-group">
-											<label for="exampleInputName2"></label>
-											<input type="text" class="form-control" id="exampleInputName2" placeholder="Name">
-										</div>
-										<div class="form-group">
-											<label for="exampleInputEmail2"></label>
-											<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
-										</div>
-										<button type="submit" class="btn btn-primary btn-lg">Sign up!</button>
-									</form>
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label class="form-label" for="exampleInputName2">Name</label>
+									<input type="text" class="form-control pull-right" id="exampleInputName2" placeholder="Jane Doe">
+								</div>
+								<div class="form-group">
+									<label class="form-label" for="exampleInputEmail2">Email*</label>
+									<input type="email" class="form-control pull-right" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+								</div>
+								<button type="submit" class="btn btn-info btn-lg">Confirm</button>
+							</form> <!-- /.form -->
 						</div>
+				<!-- modal foooter -->
 						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<p class="modal-footer-note">*Note: A valid email is <strong>required</strong>. </p>
+							<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
 						</div>
-					</div><!-- /.modal-content -->
-				</div><!-- /.modal-dialog -->
-			</div><!-- /.modal -->
-		</div>
 
-<hr>
+					</div> <!-- /.modal-content -->
+				</div> <!-- /.modal-dialog -->
+			</div> <!-- /.modal -->
+			
+		</div>
+	</div><!-- /.jumbotron -->
+
+
 
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4">
+			<div class="col-md-8">
 				<p class="pull-left" style="font-size: 25px">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 					Autem voluptates omnis repellendus amet delectus numquam 
 					tempora quod, ipsam minus eligendi magnam sit consequatur 
 					fugit, et blanditiis nesciunt expedita cupiditate quas? </p>
+
+				<hr>
+
+				<p class="pull-left" style="font-size: 25px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					Qui distinctio adipisci placeat dolorum fuga dolor suscipit 
+					dolore aliquam molestiae. Labore accusamus exercitationem 
+					accusantium soluta placeat, dolorum rerum esse recusandae earum?</p>
 			</div>
-			<div class="col-lg-4">
-					<img src="img/zophia-logo-tree2_1_trim.jpg">
+			<div class="col-md-4">
+					<img src="img/zophia-logo-tree2_1_trim.jpg" alt="Tree of life">
 					</img>
 			</div>
-			<div class="col-lg-4">
+			<!-- <div class="col-md-4">
 					<img src="">
 					</img>
-				</div>
+				</div> -->
 		</div>
 	</div>
-
-  <div style="height:400px"></div>
+<hr>
+  <div style="height:100px"></div>
 	
 			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
