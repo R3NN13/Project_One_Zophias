@@ -1,69 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	    <meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Relax</title>
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-	<!-- Bootstrap -->
-    	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Fonts -->
-    	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
-    
-        <style>
-        body{
-			width: 100%;
-			padding-top: 50px;
-			font-family:'Julius Sans One', sans-serif;
-            background-image: url("img/zophia-logo-tree2_1_orig.jpg");
-			background-repeat: no-repeat;
-			background-position: center;
-			background-attachment: fixed;
-		}
-		.navbar{
-			margin-bottom:0;
-			border-radius:0;
-			font-family:'Julius Sans One', sans-serif;
-			font-size:large;
-		}
-		.navbar-brand{
-			margin-bottom:0;
-			border-radius:0;
-			font-family:'Julius Sans One', sans-serif;
-			font-size:xx-large;
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relax</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap -->
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+
+  <style>
+    body {
+      width: 100%;
+      padding-top: 50px;
+      font-family: 'Julius Sans One', sans-serif;
+      background-image: url("img/zophia-logo-tree2_1_orig.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-position-y: 150px;
     }
-    .container{
-			width: 1600px;
-		}
-        </style>
-    
-    </head>
-    
-    <body>
-        <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container navbar">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">ZOPHIAS HOLISTIC</a>
-            </div>
-          
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="treatments.html">Treatments <span class="sr-only">(current)</span></a></li>
-              <li><a href="courses.html">Courses</a></li>
-              <li><a href="contact.html">Contact</a></li>						
-              <!--<li class="dropdown">
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      font-family: 'Julius Sans One', sans-serif;
+      font-size: large;
+    }
+
+    .navbar-brand {
+      margin-bottom: 0;
+      border-radius: 0;
+      font-family: 'Julius Sans One', sans-serif;
+      font-size: xx-large;
+    }
+
+    .container {
+      width: 1600px;
+    }
+
+    .col-lg-12 {
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    .card {
+      background: none repeat scroll 0% 0%;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      margin-bottom: 30px;
+    }
+
+    .nav-tabs {
+      background: #fff;
+      font-size: 25px;
+    }
+
+    .tab-content {
+      padding: 10px 20px 10px 20px;
+      font: black;
+      font-size: 18px;
+      background-color: whitesmoke;
+      opacity: 0.9;
+      overflow: auto;
+    }
+
+    .reiki-header {
+      text-align: center;
+    }
+
+    .chakra {
+      float: right;
+      margin: 15px;
+    }
+
+    .energy {
+      float: left;
+      margin: 15px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container navbar">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">ZOPHIAS HOLISTIC</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="treatments.html">Treatments
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html">Courses</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <!--<li class="dropdown">
                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                  <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
@@ -74,18 +132,113 @@
                   <li role="separator" class="divider"></li>
                   <li><a href="#">One more separated link</a></li>
                 </ul> -->
-              </li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-        </nav>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
 
-        <div style="height:100px"></div>
- 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    </body>
-    
+  <div class="container">
+    <div class="col-lg-12" style="font-size: 100px">
+      TREATMENTS
+    </div>
+  </div>
+  <hr>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Nav tabs -->
+        <div class="card">
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+              <a href="#home" aria-controls="reiki" role="tab" data-toggle="tab">Reiki</a>
+            </li>
+            <li role="presentation">
+              <a href="#profile" aria-controls="indian" role="tab" data-toggle="tab">Head/Foot Massage</a>
+            </li>
+            <li role="presentation">
+              <a href="#messages" aria-controls="hot-stones" role="tab" data-toggle="tab">Hot Stone Massage</a>
+            </li>
+            <li role="presentation">
+              <a href="#settings" aria-controls="aromatherapy" role="tab" data-toggle="tab">Aromatherapy</a>
+            </li>
+            <li role="presentation">
+              <a href="#settings" aria-controls="facial" role="tab" data-toggle="tab">Facial Massage Using Organic NYR Products</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="reiki">
+              <div class="reiki-header">
+                <h1>REIKI
+                  <br>
+                  <small>
+                    <i>Experience the Universal Life Force that is within you!</i>
+                  </small>
+                </h1>
+              </div>
+              <hr>
+              <h3 style="text-align:center">
+                <strong>What is 'Reiki'?</strong>
+              </h3>
+              <br>
+              <p style="text-align:center">
+                <img class="chakra img-rounded" src="img/chakra-body.jpg">
+                <img src="img/8740359.jpg" class="energy img-circle">
+                <strong>'Reiki'</strong> is a healing technique based on the principle that the therapist can channel energy into
+                the patient by means of touch to activate the natural healing processes of the patient's body and restore
+                physical and emotional well-being.</p>
+              <br>
+              <p style="text-align:center">
+                We are
+                <strong>all</strong> made up of energy and we
+                <strong>all</strong>> can access this energy.
+              </p>
+              <br>
+              <p style="text-align:center">
+                Reiki can be a hands off or on treatment, depending on individual clients preference. ​A treatment can last between half
+                an hour to 1 hour.
+              </p>
+              <br>
+                <a class="btn btn-info" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  <h3>The Benefits of Reiki</h3>
+                </a>
+                <div class="collapse" id="collapseExample" style="max-width:29%">
+                  <div class="well">
+                    <img src="img/chakra-benefits_orig.jpg">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="indian">
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="hot-stones">
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="aromatherapy">
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="facial">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height:100px"></div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
