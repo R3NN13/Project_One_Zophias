@@ -1,0 +1,30 @@
+body {
+    width: 100%;
+    padding-top: 50px;
+    font-family: 'Julius Sans One', sans-serif;
+    background-image: url("../img/zophia-logo-tree2_1_orig.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-position-y: 150px;
+}
+
+.courses-header {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 30px;
+}
+
+.left-p{
+    font-size:18px; 
+    text-align:center; 
+    padding-right:250px; 
+    margin-left:-70px;
+}
+
+.right-p{
+    font-size:18px; 
+    text-align:center; 
+    padding-left:230px; 
+    margin-right:-50px
+}

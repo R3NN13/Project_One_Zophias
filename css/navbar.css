@@ -1,0 +1,21 @@
+nav{
+    font-size: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: large;
+}
+
+.navbar-brand {
+    margin-bottom: 0;
+    border-radius: 0;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: xx-large;
+}
+
+.container-fluid {
+    width: 1600px;
+}

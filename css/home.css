@@ -1,0 +1,29 @@
+body {
+    width: 100%;
+    padding-top: 50px;
+    font-family: 'Julius Sans One', sans-serif;
+    background-image: url("../img/zophia-logo-tree2_1_orig.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-position-y: 150px;
+}
+
+.jumbotron {
+    padding: 1.5%;
+    padding-top: 0.5%;
+}
+
+.modal-title {
+    font-size: x-large;
+}
+
+.form-control {
+    font-family: sans-serif;
+    width: 70%;
+    margin-right: 10%;
+}
+
+.form-label {
+    font-size: 18px;
+}

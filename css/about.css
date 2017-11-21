@@ -1,0 +1,15 @@
+body {
+    width: 100%;
+    padding-top: 50px;
+    font-family: 'Julius Sans One', sans-serif;
+    background-image: url("../img/zophia-logo-tree2_1_orig.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 150px;
+    background-position-x: 1200px;
+}
+
+.col-lg-12 {
+    padding-top: 30px;
+    text-align: center;
+}
