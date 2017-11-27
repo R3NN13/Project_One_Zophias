@@ -16,6 +16,14 @@ nav{
     font-size: xx-large;
 }
 
-.container-fluid {
-    width: 1600px;
+.container {
+    width: auto;
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .nav{
+        text-align: center;
+        margin-right:30%;
+    }
 }

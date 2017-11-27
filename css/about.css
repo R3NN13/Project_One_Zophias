@@ -1,16 +1,116 @@
 body {
-    width: 100%;
+    width: auto;
     padding-top: 50px;
     font-family: 'Julius Sans One', sans-serif;
-    background-image: url("../img/zophia-logo-tree2_1_orig.jpg");
+    /* background-image: url("../img/zophia-logo-tree2_1_orig.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: 150px;
-    background-position-x: 1200px;
+    background-position-x: 1200px; */
 }
 
 .about-header {
     padding-top: 30px;
     text-align: center;
     font-size: 100px;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+img {
+    position: relative ;
+    max-width: 600px;
+    margin-left: 650px;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    img {
+        position: relative ;
+        max-width: 650px;
+        margin-left: 200px;
+    }
+}
+     
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    h2{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+    
+    .about-header {
+        padding-top: 30px;
+        text-align: center;
+        font-size: 80px;
+    }
+
+    img {
+        position: relative ;
+        max-width: 600px;
+        margin-left: 150px;
+    }
+}
+     
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    
+    h2{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .about-header {
+        padding-top: 30px;
+        text-align: center;
+        font-size: 80px;
+    }
+
+    img {
+        position: relative ;
+        max-width: 600px;
+        margin:0;
+    }
+}
+     
+ /* Portrait phones and smaller */
+@media (max-width: 480px) {
+        
+    h2{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .about-header {
+        padding-top: 30px;
+        text-align: center;
+        font-size: 70px;
+    }
+
+    img {
+        position: relative ;
+        margin: 0;
+        max-width: 500px;
+    }
 }
