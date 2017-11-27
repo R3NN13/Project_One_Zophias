@@ -9,10 +9,11 @@ body {
     background-position-y: 150px;
 }
 
-.col-lg-12 {
+.treatments-header {
     padding-top: 30px;
     text-align: center;
 }
+
 
 .card {
     background: none repeat scroll 0% 0%;
@@ -113,4 +114,8 @@ body {
 
 .facial-img {
     margin-top: 90px;
+}
+
+@media (min-width: @screen-sm-min) {
+    
 }
