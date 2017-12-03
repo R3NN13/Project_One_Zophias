@@ -1,12 +1,12 @@
 body {
-    width: 100%;
+    width: auto;
     padding-top: 50px;
     font-family: 'Julius Sans One', sans-serif;
-    background-image: url("../img/zophia-logo-tree2_1_orig.jpg");
+    /* background-image: url("../img/zophia-logo-tree2_1_orig.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: 150px;
-    background-position-x: 1200px;
+    background-position-x: 1200px; */
 }
 
 .contact-header {
@@ -15,6 +15,131 @@ body {
     margin-top: 30px;
 }
 
+.form-area{
+    margin-left: 80px;
+    margin-top: 80px;
+    z-index: 1;
+}
+
 .form-group {
     font-family: sans-serif;
+}
+
+#submit {
+    margin-top:-10px;
+}
+
+h4{
+    margin-bottom: 25px; 
+    text-align: center;
+}
+
+.alternate_contact{
+    text-align:center; 
+    margin-top:-250px; 
+    margin-left:150px;
+}
+
+#alternate_contact{
+    font-family:sans-serif;
+}
+
+.zophias-tree {
+    text-align: center;
+}
+
+img{
+    margin-top: -20px;
+    max-width:100%;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    img{
+        margin-top:120px;
+        margin-left:10px;
+        max-width: 100%;
+    }
+
+    .alternate_contact{
+        margin-top: 0;
+    }
+}
+         
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .form-area{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    img {
+        position: relative;
+        max-width: 600px;
+        margin-left:150px;
+        padding-top:20px;
+    }
+    .alternate_contact{
+        text-align:center; 
+        font-size:18px ;
+        margin-left:10px;
+    }
+}
+         
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .form-area{
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .contact-header{
+        font-size: 80px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    img {
+        position: relative;
+        max-width: 100%;
+        margin-top:20px;
+        margin-left:50px;
+    }
+
+    .alternate_contact{
+        text-align:center; 
+        font-size:18px ;
+        margin-left:10px;
+    }
+}
+         
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .contact-header{
+        font-size: 60px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .form-area{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    img {
+        position: relative;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .alternate_contact{
+        text-align:center; 
+        font-size:18px ;
+        margin-left:10px;
+    }
 }

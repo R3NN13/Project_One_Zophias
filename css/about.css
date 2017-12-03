@@ -24,7 +24,7 @@ p{
 }
 
 img {
-    position: relative ;
+    position: relative;
     max-width: 600px;
     margin-left: 650px;
 }
@@ -37,7 +37,7 @@ img {
 @media (min-width: 992px) and (max-width: 1199px) {
 
     img {
-        position: relative ;
+        position: relative;
         max-width: 650px;
         margin-left: 200px;
     }
@@ -61,7 +61,7 @@ img {
     }
 
     img {
-        position: relative ;
+        position: relative;
         max-width: 600px;
         margin-left: 150px;
     }
@@ -85,7 +85,7 @@ img {
     }
 
     img {
-        position: relative ;
+        position: relative;
         max-width: 600px;
         margin:0;
     }
@@ -105,11 +105,11 @@ img {
     .about-header {
         padding-top: 30px;
         text-align: center;
-        font-size: 70px;
+        font-size: 60px;
     }
 
     img {
-        position: relative ;
+        position: relative;
         margin: 0;
         max-width: 500px;
     }

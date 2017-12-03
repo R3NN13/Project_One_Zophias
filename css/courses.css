@@ -2,11 +2,11 @@ body {
     width: 100%;
     padding-top: 50px;
     font-family: 'Julius Sans One', sans-serif;
-    background-image: url("../img/zophia-logo-tree2_1_orig.jpg");
+    /* background-image: url("../img/zophia-logo-tree2_1_orig.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-position-y: 150px;
+    background-position-y: 150px; */
 }
 
 .courses-header {
@@ -15,16 +15,116 @@ body {
     margin-top: 30px;
 }
 
+.content{
+    margin-top:150px;
+}
+
+.cbl{
+    text-align:center;
+}
+
 .left-p{
-    font-size:18px; 
-    text-align:center; 
-    padding-right:250px; 
-    margin-left:-70px;
+    font-size:18px;
+}
+
+.zophias-tree{
+    margin-top: px;
+    max-width: 100%;
+}
+
+.hsl{
+    text-align:center;
 }
 
 .right-p{
     font-size:18px; 
-    text-align:center; 
-    padding-left:230px; 
-    margin-right:-50px
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+     
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .courses-header {
+        font-size: 80px;
+    }
+
+    .zophias-tree{
+        max-width:100%;
+        margin:0;
+    }
+
+}
+     
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .courses-header {
+        font-size: 80px;
+    }
+
+    .zophias-tree{
+        margin-left:100px;
+        margin-top:0;
+        padding-left:40px;
+        padding-right:40px;
+    }
+
+    .cbl{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .hsl{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+}
+     
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+    .courses-header {
+        font-size: 70px;
+    }
+
+    .zophias-tree{
+        max-width: 100%;
+        margin: 0;
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .cbl{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .hsl{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+}
+     
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+    .courses-header {
+        font-size: 70px;
+    }
+
+    .cbl{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .hsl{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
 }

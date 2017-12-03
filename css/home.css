@@ -2,11 +2,11 @@ body {
     width: 100%;
     padding-top: 50px;
     font-family: 'Julius Sans One', sans-serif;
-    background-image: url("../img/zophia-logo-tree2_1_orig.jpg");
+    /* background-image: url("../img/zophia-logo-tree2_1_orig.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-position-y: 150px;
+    background-position-y: 150px; */
 }
 
 .jumbotron {
@@ -26,4 +26,22 @@ body {
 
 .form-label {
     font-size: 18px;
+}
+
+.zophias-tree{
+    max-width:100%;
+}
+
+.left{
+    text-align: center;
+    font-size: 25px;
+}
+
+.right{
+    text-align: center;
+    font-size: 25px;    
+}
+
+.img-rounded{
+    max-width: 100%;
 }

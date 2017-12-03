@@ -1,4 +1,4 @@
-nav{
+nav {
     font-size: 0;
 }
 
@@ -20,10 +20,21 @@ nav{
     width: auto;
 }
 
+
 /* Landscape phones and portrait tablets */
+
 @media (max-width: 767px) {
-    .nav{
+    .nav {
         text-align: center;
-        margin-right:30%;
+        margin-right: 30%;
+    }
+}
+
+
+/* Portrait phones and smaller */
+
+@media (max-width: 480px) {
+    .navbar-brand {
+        font-size: 28px;
     }
 }

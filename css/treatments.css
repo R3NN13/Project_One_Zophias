@@ -1,5 +1,5 @@
 body {
-    width: 100%;
+    width: auto;
     padding-top: 50px;
     font-family: 'Julius Sans One', sans-serif;
     background-image: url("../img/zophia-logo-tree2_1_orig.jpg");
@@ -12,6 +12,7 @@ body {
 .treatments-header {
     padding-top: 30px;
     text-align: center;
+    font-size: 100px;
 }
 
 
@@ -22,17 +23,29 @@ body {
 }
 
 .nav-tabs {
-    background: #fff;
+    background: rgb(255, 255, 255);
     font-size: 35px;
+    width: 100%;
 }
 
 .tab-content {
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 20px 20px;
     font: black;
     font-size: 18px;
-    background-color: whitesmoke;
-    opacity: 0.9;
+    background-color: rgba(245, 245, 245, 0.925);
     overflow: auto;
+}
+
+p{
+    text-align:center;
+}
+
+#info{
+    font-size: 25px;
+}
+
+.book-btn {
+    text-align: center;
 }
 
 .reiki-header {
@@ -41,12 +54,12 @@ body {
 
 .chakra {
     float: right;
-    margin: 15px;
+    padding: 15px;
 }
 
 .energy {
     float: left;
-    margin: 15px;
+    padding: 15px;
 }
 
 .head-massage-header {
@@ -54,9 +67,10 @@ body {
 }
 
 .head-massage-img {
-    height: 200px;
+    text-align: center;
     margin-top: 90px;
-    margin-left: 80px;
+    max-width: 100%;
+    
 }
 
 .foot-massage-header {
@@ -64,43 +78,67 @@ body {
 }
 
 .foot-massage-img {
-    height: 300px;
+    max-width: 100%;
     margin-right: 60px;
-    margin-left: 40px;
+    
 }
 
 .hot-stones-header {
     text-align: center;
 }
 
+.stone-massage-imgs {
+
+    text-align: center;
+
+}
+
 .buddha {
-    margin-left: 60px;
+    
     margin-top: 80px;
-    width: 590px;
+    max-width: 100%;
 }
 
 .hot-stones-tower-img {
     float: right;
     margin: 15px;
-    height: 200px;
+    max-width: 100%;
+}
+
+.hot-stones-massage {
+    text-align: center;
 }
 
 .hot-stones-massage-img {
-    margin-left: 60px;
+    
     margin-top: 60px;
+    max-width: 100%;
+}
+
+.hot-stones-benefits {
+    font-size: 18px;
 }
 
 .aromatherapy-header {
     text-align: center;
 }
 
+.aroma-left {
+    text-align: center;
+}
+
 .aroma-img-left {
-    width: 380px;
+    padding: 15px;
+    max-width: 100%;
+}
+
+.aroma-right {
+    text-align: center;
 }
 
 .aroma-img-right {
-    margin-right: 10px;
-    width: 380px;
+    padding:15px;
+    max-width: 100%;
 }
 
 .facial-header {
@@ -108,10 +146,82 @@ body {
 }
 
 .facial-list {
-    margin-left: 130px;
-    font-size: 20px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.facial {
+    text-align: center;
 }
 
 .facial-img {
-    margin-top: 90px;
+    max-width: 100%;
+    padding: 15px;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+     
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+        
+    .facial-list {
+        font-size: 25px;
+    } 
+
+}
+     
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .nav-tabs {
+        text-align: center;
+        font-size: 25px;
+        
+    }
+
+    .facial-list {
+        font-size: 25px;
+    } 
+
+    
+}
+     
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+    .nav-tabs {
+        text-align: center;
+        font-size: 25px;
+        
+    }
+
+    .treatments-header {
+        font-size: 60px;
+    }
+
+    .facial-list {
+        font-size: 20px;
+    }    
+
+}
+ 
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+    .nav-tabs {
+        text-align: center;
+        font-size: 25px;
+        
+    }
+
+    .treatments-header {
+        font-size: 40px;
+    }
+
+    .hot-stones-benefits {
+        font-size: 16px;
+    }
+
 }
