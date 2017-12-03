@@ -1,5 +1,6 @@
 nav {
     font-size: 0;
+    padding-right:50px;
 }
 
 .navbar {
@@ -14,21 +15,37 @@ nav {
     border-radius: 0;
     font-family: 'Julius Sans One', sans-serif;
     font-size: xx-large;
+    padding-left:50px;
 }
 
 .container {
     width: auto;
 }
 
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    nav {
+        padding-right: 0px;
+    }
 
-/* Landscape phones and portrait tablets */
-
-@media (max-width: 767px) {
-    .nav {
-        text-align: center;
-        margin-right: 30%;
+    .navbar-brand {
+        padding-left: 5px;
+        font-size: 28px;
     }
 }
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    nav {
+        padding-right: 0px;
+    }
+
+    .navbar-brand {
+        padding-left: 5px;
+        font-size: 28px;
+    }
+}
+
 
 
 /* Portrait phones and smaller */
