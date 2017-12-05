@@ -8,8 +8,11 @@
   <title>Relax</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- AngularJS -->
+  <link href="bower_components/angular/angular.min.js" rel="stylesheet">
   <!-- Bootstrap -->
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/bootstrap/dist/js/bootstrap.min.js" rel="stylesheet">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
   <!-- Style -->
@@ -81,7 +84,7 @@
     <div class="row">
       <div class="col-xs-12 col-md-8 col-lg-6">
         <div class="form-area">
-          <form role="form">
+          <form name="contact" method="post" onSubmit="return greeting()">
             <br style="clear:both">
             <h4>Please fill in the contact sheet below to book with us or if you have any queries</h4>
             <div class="form-group">
@@ -105,8 +108,16 @@
               </span>
             </div>
 
-            <button type="button" id="submit" name="submit" class="btn btn-lg btn-info pull-right" onclick="document.getElementById('form').submit()">SUBMIT</button>
+            <input type="submit" id="submit" name="submit" value="SUBMIT" class="btn btn-lg btn-info pull-right" onClick="greeting();" />
           </form>
+        </div>
+        <div class="alternate_contact">
+          <h2>TELEPHONE:
+            <a id="alternate_contact" href="tel:07956606702">07956606702</a>
+          </h2>
+          <h2>EMAIL:
+            <a id="alternate_contact" href="mailto:namaste@zophias.com">namaste@zophias.com</a>
+          </h2>
         </div>
       </div>
       <div class="zophias-tree col-xs-12 col-md-4 col-lg-6">
@@ -115,22 +126,12 @@
     </div>
   </div>
 
-  <div class="alternate_contact col-md-5">
-    <h2>TELEPHONE:
-      <a id="alternate_contact" href="tel:07956606702">07956606702</a>
-    </h2>
-    <h2>EMAIL:
-      <a id="alternate_contact" href="mailto:namaste@zophias.com">namaste@zophias.com</a>
-    </h2>
-    <br>
-
-  </div>
-
   <div style="height:100px"></div>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/contact_form.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 

@@ -35,9 +35,9 @@ h4{
 }
 
 .alternate_contact{
-    text-align:center; 
-    margin-top:-250px; 
-    margin-left:150px;
+    margin-top: 80px;
+    margin-left: 80px;
+    text-align: center;
 }
 
 #alternate_contact{
@@ -52,6 +52,9 @@ img{
     margin-top: -20px;
     max-width:100%;
 }
+.red{
+    color:red;
+}
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
@@ -65,9 +68,6 @@ img{
         max-width: 100%;
     }
 
-    .alternate_contact{
-        margin-top: 0;
-    }
 }
          
 /* Portrait tablets and small desktops */
