@@ -2,10 +2,10 @@
 
 ## Content
 
-1. [Overview](#Overview)
-2. [Features](#Features)
-3. [Tech Used](#TechUsed)
-4. [Contributing](#Contributing)
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Tech Used](#tech-used)
+4. [Contributing](#contributing)
 
 ## Overview
  
