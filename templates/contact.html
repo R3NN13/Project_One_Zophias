@@ -1,0 +1,56 @@
+<link href="css/contact.css" rel="stylesheet">
+
+<div class="contact-header container">
+    <div class="col-xs-12">
+        CONTACT
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-8 col-lg-6">
+            <div class="form-area">
+                <form name="contact" method="post" onSubmit="return greeting()">
+                    <br style="clear:both">
+                    <h4>Please fill in the contact sheet below to book with us or if you have any queries</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="240" rows="7"></textarea>
+                        <span class="help-block">
+                            <p id="characterLeft" class="help-block ">
+                                <i>*message limited to 240 characters</i>
+                            </p>
+                        </span>
+                    </div>
+
+                    <input type="submit" id="submit" name="submit" value="SUBMIT" class="btn btn-lg btn-info pull-right" onClick="greeting();"
+                    />
+                </form>
+            </div>
+            <div class="alternate_contact">
+                <h2>TELEPHONE:
+                    <a id="alternate_contact" href="tel:07956606702">07956606702</a>
+                </h2>
+                <h2>EMAIL:
+                    <a id="alternate_contact" href="mailto:namaste@zophias.com">namaste@zophias.com</a>
+                </h2>
+            </div>
+        </div>
+        <div class="zophias-tree col-xs-12 col-md-4 col-lg-6">
+            <img src="img/zophia-logo-tree2_1_orig.jpg">
+        </div>
+    </div>
+</div>

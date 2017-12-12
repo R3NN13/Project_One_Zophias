@@ -23,4 +23,4 @@ function greeting(form) {
      
     alert("Thank you! We have received your message and will contact shortly!");
     return true;
-    }
+}

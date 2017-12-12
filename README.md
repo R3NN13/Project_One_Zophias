@@ -33,6 +33,8 @@ This website allows users to get information on various services the company pro
 [Back To Top](#zophias-project-one)
  
 ## Tech Used
+- [AngularJS](https://angularjs.org/)
+    - I use **AngularJS** to handle page routing
 - [Bootstrap](http://getbootstrap.com/)
     - I used **Bootstrap** to give my project a simple, responive layout
 - [npm](https://www.npmjs.com/)

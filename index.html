@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="Zophias">
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Relax</title>
+	<base href="/"> <!-- needed for Angular HTML 5 mode -->
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- AngularJS -->
-	<link href="bower_components/angular/angular.min.js" rel="stylesheet">
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
 	<!-- Bootstrap -->
-	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="bower_components/bootstrap/dist/js/bootstrap.min.js" rel="stylesheet">
+	<link type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
 	<!-- Style -->
 	<link href="css/navbar.css" rel="stylesheet">
-	<link href="css/home.css" rel="stylesheet">
+	
+	
+	
+	
+	
 </head>
 
 <body>
@@ -25,45 +34,32 @@
 		<div class="container navbar">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar"
-				    aria-expanded="false">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">ZOPHIAS HOLISTIC</a>
+				<a class="navbar-brand" href=".">ZOPHIAS HOLISTIC</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar">
+			<div class="collapse navbar-collapse" id="bs-example-navbar" ng-controller="HeaderCtrl">
 				<ul class="nav navbar-nav pull-right">
-					<li class="active">
-						<a href="index.html">Home</a>
+					<li ng-class="{active : isActive('/')}">
+						<a href=".">Home</a>
 					</li>
-					<li>
-						<a href="about.html">About</a>
+					<li ng-class="{active : isActive('/about')}">
+						<a href="about">About</a>
 					</li>
-					<li>
-						<a href="treatments.html">Treatments</a>
+					<li ng-class="{active : isActive('/treatments')}">
+						<a href="treatments">Treatments</a>
 					</li>
-					<li>
-						<a href="courses.html">Courses</a>
+					<li ng-class="{active : isActive('/courses')}">
+						<a href="courses">Courses</a>
 					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-					<!--<li class="dropdown">
-			 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
- 			<ul class="dropdown-menu">
-			  <li><a href="#">Action</a></li>
-			  <li><a href="#">Another action</a></li>
-			  <li><a href="#">Something else here</a></li>
-			  <li role="separator" class="divider"></li>
-			  <li><a href="#">Separated link</a></li>
-			  <li role="separator" class="divider"></li>
-			  <li><a href="#">One more separated link</a></li>
-			</ul> -->
+					<li ng-class="{active : isActive('/contact')}">
+						<a href="contact">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -72,98 +68,17 @@
 		<!-- /.container-fluid -->
 	</nav>
 
-	<!-- JUMBOTRON -->
-	<div class="jumbotron text-center">
-		<div class="container">
-			<h2>Click to sign up for updates!</h2>
-			<!-- Trigger the modal with a button -->
-			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click Here</button>
+	<div ng-view>
 
-			<!-- Modal -->
-			<div class="modal fade" id="myModal" role="dialog">
-				<div class="modal-dialog">
-
-					<!-- Modal content-->
-					<div class="modal-content">
-						<!-- <div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title"><b>Enter your name and email address and click 'Confirm' for updates!</b></h4>
-						</div> -->
-						<!-- modal body -->
-						<div class="modal-body">
-							<form class="form-horizontal">
-								<div class="form-group">
-									<label class="form-label" for="exampleInputName2">Name</label>
-									<input type="text" class="form-control pull-right" id="exampleInputName2" placeholder="Jane Doe">
-								</div>
-								<div class="form-group">
-									<label class="form-label" for="exampleInputEmail2">Email*</label>
-									<input type="email" class="form-control pull-right" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-								</div>
-								<button type="submit" class="btn btn-info btn-lg">Sign up!</button>
-							</form>
-							<!-- /.form -->
-						</div>
-						<!-- modal foooter -->
-						<div class="modal-footer">
-							<p class="modal-footer-note">*Note: A valid email is
-								<strong>required</strong>. </p>
-							<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-						</div>
-
-					</div>
-					<!-- /.modal-content -->
-				</div>
-				<!-- /.modal-dialog -->
-			</div>
-			<!-- /.modal -->
-
-		</div>
 	</div>
-	<!-- /.jumbotron -->
 
-
-	<div class="container">
-		<div class="row">
-			<div class="left col-md-4">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptates omnis repellendus amet delectus numquam tempora
-					quod, ipsam minus eligendi magnam sit consequatur fugit, et blanditiis nesciunt expedita cupiditate quas? </p>
-
-				<hr>
-
-				<img src="img/mg-3647-2_orig.jpg" class="img-rounded" alt="Hot stones massage">
-
-				<hr>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui distinctio adipisci placeat dolorum fuga dolor suscipit
-					dolore aliquam molestiae. Labore accusamus exercitationem accusantium soluta placeat, dolorum rerum esse recusandae
-					earum?
-				</p>
-			</div>
-
-			<div class="col-md-4">
-				<img class="zophias-tree" src="img/zophia-logo-tree2_1_orig.jpg">
-				
-			</div>
-
-			<div class="right col-md-4">
-				<img src="img/mg-3663_orig.jpg" class="img-rounded" alt="Candles on hands">
-
-				<hr>
-
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque modi expedita amet iure maiores, est ipsa perferendis
-					sapiente at adipisci molestiae libero, sequi aspernatur consectetur nihil temporibus? Nesciunt, possimus.</p>
-			</div>
-		</div>
-	</div>
-	<hr>
 
 	<div style="height:100px"></div>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src='js/app.js'></script>
+	<script src='js/controller.js'></script>
+
+
 </body>
 
 </html>
